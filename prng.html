@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PRNG</title>
+</head>
+<body>
+  <div id="prng">
+    <hr />
+    <div>
+      <div>
+        <label for="random-from">Losuj wartość od:</label>
+      </div>
+      <input id="random-from" type="number" step="1" min="0" max="10000" value="0" />
+    </div>
+    <div>
+      <div>
+        <label for="random-from">Losuj wartość do:</label>
+      </div>
+      <input id="random-to" type="number" step="1" min="0" max="10000" value="10" />
+    </div>
+    <div>
+      <button type="button" id="random" class="blog-button blog-detail-bg contact-submit" disabled="true">Pseudolosuj</button>
+    </div>
+    <h5>
+      Wynik: <span id="result"></span>
+    </h5>
+    <hr />
+  </div>
+  <script src="/prng.js"></script>
+</body>
+</html>
